@@ -1,0 +1,441 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(185, 204, 192);
+}
+/* .container{
+    max-width: 1000px;
+    margin: auto;
+} */
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+[class*= "col-"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*= "col-"]{
+    width: 100%;
+}
+
+/* header start */
+header{
+    background-color: rgb(143, 15, 143);
+    padding: 0% 1%;
+    text-align: center;
+    /* height: 100px; */
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+nav ul li{
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 60px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+
+nav ul li a:hover{
+    background-color: rgb(104, 9, 104);
+    border-radius: 10px;
+
+}
+/* header end */
+
+
+/* banner-section starts from here */
+
+#banner-section{
+    background-image: url("image/restaurant.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-container{
+    padding: 100px 10px;
+    text-align: center;
+}
+
+.banner-container h1{
+    width: 100%;
+    margin: 20px auto;
+    font-size: 3rem;
+    color: white;
+    /* background: rgb(123, 199, 52); */
+    background: linear-gradient(-45deg, rgb(201, 201, 53) 10%, rgb(141, 80, 177) 50%,rgb(223, 152, 164) 90%);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.banner-container p{
+    width: 350px;
+    margin: 15px auto;
+    font-size: 1.6rem;
+    color: white;
+    background: rgb(52, 199, 118);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.banner-container .btn{
+    width: 170px;
+    border: none; 
+    padding: 15px;
+    margin: 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: rgb(6, 158, 26);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.banner-container .btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 8px 5px rgb(32, 26, 26); 
+ }
+/* banner-section end here */
+
+
+/* food_menu_section start */
+#food_menu_section{
+    padding: 1%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-desc{
+    text-align: center;
+    background-color: rgb(112, 104, 104);
+    /* height: 120px; */
+}
+
+.card-desc .item-name{
+    font-size: 1.3rem;
+    background-color: rgb(35, 187, 68);
+    color: white;
+    padding: 10px;
+}
+
+.card-desc > p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.card{
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.06);
+    box-shadow: 2px 5px 8px 5px black;
+}
+
+#food_menu_section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* food_menu_section end */
+
+
+/* about-us section start */
+
+#about-us{
+    text-align: center;
+    padding: 1%;
+    background: linear-gradient(-45deg,  green 10%, rgb(165, 151, 151) 20%, pink 50%, rgb(83, 83, 204) , black );
+}
+
+.about-us-h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    /* color: rgb(12, 79, 83); */
+}
+
+.about-us-logo {
+    margin-top: 10px;
+}
+
+.about-us-logo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: rgb(102, 102, 192) 5px solid;
+    transition: 2s;
+}
+
+.about-us-logo img:hover{
+    cursor: pointer;
+    border: rgb(52, 158, 126) 5px solid;
+    transform: rotate(360deg);
+}
+
+.about-us-contents{
+    text-align: center;
+}
+
+.about-us-contents p{
+    text-align: justify;
+    font-size: 1.09rem;
+    color:rgb(0, 0, 0);
+}
+
+#about-us::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* about-us section end */
+
+
+/* contact section starts */
+#contact{
+    margin-top: 20px;
+    padding: 1%;
+    background-color: teal;
+}
+
+.map{
+    width: 100%;
+    height: 280px
+}
+
+.contact-details{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.contact-details p, address{
+    font-size: 1rem;
+}
+
+.contact-icon{
+    text-align: center;
+}
+
+.contact-icon .btn{
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 30px;
+    margin: 15px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contact-icon .btn:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 5px 8px 5px black;
+    /* transform: rotate(360deg); */
+}
+
+/* contact section end */
+
+
+/* footer start from here */
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.fotter-text p{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.footer-nav ul li{
+    display: block;
+}
+
+.footer-nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(11, 122, 45);
+    line-height: 35px;
+    font-size: 1.1rem;
+}
+
+.fotter-icon{
+    border: none;
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.fotter-icon:hover{
+    transform: scale(1);
+    box-shadow: 2px 3px 3px 2px rgb(54, 51, 51);
+}
+/* footer end here */
+
+/* smaller device   576px and up*/
+@media (min-width: 576px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+  }
+
+
+ /* medium device   768px and up*/
+@media (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  } 
+
+  /* large device   992px and up*/
+@media (min-width: 992px) {
+
+    .logo-div{
+        text-align: left;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    nav ul li{
+        display: inline-block;
+        margin: 0px 15px;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover{
+        background: transparent;
+        transform: scale(1.1);
+        text-decoration: underline;
+    }
+
+    /* banner section start */
+    #banner-section{
+        position: relative;
+        height: 100vh;
+    }
+
+    .banner-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner-container h1{
+        /* padding: 20px 0px; */
+        width: 600px;
+        font-size: 3.5rem;
+    }
+
+    .banner-container p{
+        /* padding: 20px 0px; */
+        width: 500px;
+        font-size: 2.4rem;
+    }
+    /* banner section end */
+
+
+    /* footer section start here */
+    .footer-nav ul{
+        text-align: center;
+    }
+
+    .footer-nav ul li{
+        display: inline-block;
+        margin: 0px 15px;
+    }
+    /* footer section end here */
+
+
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+  } 
